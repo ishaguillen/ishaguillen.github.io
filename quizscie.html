@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+ <head>  
+    <meta charset="utf-8">  
+    <title>Science</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <link rel="stylesheet" href="quizsci.css">
+ <body>
+
+  <table style="width: 300px;">
+    <tr>
+ <th><div class="quiz-container" id="quiz">
+    <div class="quiz-header">
+      <h2 id="question">Question Text</h2>
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">Answer</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">Answer</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">Answer</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="d" class="answer">
+          <label for="d" id="d_text">Answer</label>
+        </li>
+      </ul>
+    </div>
+    <button id="submit">Submit</button>
+  </div>
+</th>
+     <th> <div class="screen" id="yuh2">  
+           <form name="calc">  
+                <input type="text" name="text" readonly id="screen">  
+           </form>  
+      </div>  
+      <div class="cal-body" id="yuh3">  
+           <div class="btn">  
+                <button class="num" onclick="document.calc.text.value+='7'">7</button>  
+                <button class="num" onclick="document.calc.text.value+='8'">8</button>  
+                <button class="num" onclick="document.calc.text.value+='9'">9</button>  
+                <button class="del" onclick="del()">DEL</button>  
+                <button class="num" onclick="document.calc.text.value+='4'">4</button>  
+                <button class="num" onclick="document.calc.text.value+='5'">5</button>  
+                <button class="num" onclick="document.calc.text.value+='6'">6</button>  
+                <button onclick="document.calc.text.value+='+'">+</button>  
+                <button class="num" onclick="document.calc.text.value+='1'">1</button>  
+                <button class="num" onclick="document.calc.text.value+='2'">2</button>  
+                <button class="num" onclick="document.calc.text.value+='3'">3</button>  
+                <button onclick="document.calc.text.value+='-'">-</button>  
+                <button onclick="document.calc.text.value+='.'">.</button>  
+                <button class="num" onclick="document.calc.text.value+='0'">0</button>  
+                <button onclick="document.calc.text.value+='/'">/</button>  
+                <button onclick="document.calc.text.value+='*'">X</button>  
+                <button class="reset" onclick="document.calc.text.value=''">RESET</button>  
+                <button class="equal" onclick="document.calc.text.value= eval(calc.text.value)">=</button>  
+           </div>  
+      </div>  
+ </div>  
+ </th>
+ </tr>
+ </table>
+ <script src="quizscie.js"></script> 
+      
+  

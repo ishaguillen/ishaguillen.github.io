@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+    color: white;
+    transition: 0.5s;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body::before{
+content: "";
+background-image: url(amen.png);
+position: absolute;
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position: center;
+filter: brightness(0.25);
+z-index: -1;
+}
+main {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    gap: 15px;
+}
+.card {
+    width: 20%;
+    border-radius: 15px;
+    cursor: pointer;
+     overflow: hidden; 
+}
+.card:hover{
+    width:80%
+}
+.card .image{
+   width: 100%;
+   height: 100%;
+    object-fit: cover;
+}
+.card:hover .image {
+    transform: scale(1.2)
+}
+.card .background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+    filter: brightness(0.25);
+    opacity: 0;
+}
+.card:hover .background{
+    opacity: 1;
+
+}
+.card .layer {
+    width: 100%;
+    height: 50%;
+    margin-top: -250px;
+    position: relative;
+    background: linear-gradient(to top, rgba(0,0,0,0.9),transparent);
+}
+.card .layer .info {
+    width: 260px;
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    opacity: 0;
+
+}
+.card:hover .layer .info{
+    opacity: 1;
+
+}
+.info p{
+   color: rgba(255,255,255,0.75);
+   margin-top: 5px;
+}
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #6b3ac5;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #ffffff;
+  }
+  
+  .button:hover {background-color: #b358e8}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #ffffff;
+    transform: translateY(4px);
+  }
+  .butn{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background-color: gray;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 180px;
+  height: 50px;
+  }
+  .buttn:hover{
+    background-color: #33064f;
+  color: white;
+  }
+  .buttn{
+    background-color: rgb(162, 87, 190); 
+  color: white; 
+  border: 2px solid rgb(64, 35, 64);
+  border-radius: 30px;
+  padding-bottom: 45px;
+  }

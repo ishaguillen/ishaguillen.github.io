@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FF PeTa 11HA-03</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    
+    <body>
+        <header> 
+        <a href="#" class="logo">Faith in Motion</a>
+            <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#uwu">Know Frassati</a></li>
+        <li><a href="PRAYER.html">Let Us Pray</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="cross.png" id="cross">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <h2 id="text">11HA-03</h2>
+            <a href="library.html" id="btn">Thomasian Pilgrims</a>
+            <img src="mountains_front.png" id="mountains_front">
+        </section>
+            <div class="wrapper" id="uwu">
+                <div class="cont">
+                    <input type="radio" name="slide" id="c1" checked>
+                    <label for="c1" class="cad">
+                        <div class="row">
+                            <div class="icon">1</div>
+                            <div class="description">
+                                <h4>Blessed Pier Giorgio Frassati</h4>
+                                <p>Man of The Beautitudes; Born on April 6, 1901 in Turin, Italy</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c2" >
+                    <label for="c2" class="cad">
+                        <div class="row">
+                            <div class="icon">2</div>
+                            <div class="description1">
+                                <h4>Blessed Pier Giorgio Frassati</h4>
+                                <p><b>Verso L'Alto "<i>To The Heights</i>"</b></p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c3" >
+                    <label for="c3" class="cad">
+                        <div class="row">
+                            <div class="icon">3</div>
+                            <div class="description2">
+                                <h4>Blessed Pier Giorgio Frassati</h4>
+                                <p>Died on July 4, 1925 at 24 years old due to Polio. His canonization is in August 3, 2025 during the Jubilee of the Youth.</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c4" >
+                    <label for="c4" class="cad">
+                        <div class="row">
+                            <div class="icon">4</div>
+                            <div class="description3">
+                                <h4>Jubilee Year 2025</h4>
+                                <p><b>Celebrated every 25 years to for repentance, release, and restoration.</b></p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c5" >
+                    <label for="c5" class="cad">
+                        <div class="row">
+                            <div class="icon">5</div>
+                            <div class="description4">
+                                <h4>Pilgrims of Hope</h4>
+                                <p>This year's Jubilee Year Theme proclaimed by Pope Francis.</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c6" >
+                    <label for="c6" class="cad">
+                        <div class="row">
+                            <div class="icon">6</div>
+                            <div class="description5">
+                                <h4>References Used</h4>
+                                <p>Please Scan the QR Code to be redirected.</p>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+       
+
+
+        <script>
+            let stars = document.getElementById('stars');
+            let cross = document.getElementById('cross');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+
+
+            window.addEventListener('scroll', function (){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 0.2 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+                
+            })
+
+    
+        </script>
+</html>

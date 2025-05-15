@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #b8c6db;
+  background-image: url(th.jpg);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.quiz-container{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  width: 600px;
+  overflow: hidden;
+}
+.quiz-header{
+  padding: 4rem;
+}
+h2{
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+ul li{
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+ul li label{
+  cursor: pointer;
+}
+button{
+  background-color: #6e0381;
+  color: #fff;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1.3rem;
+}
+#submit {
+  width: 96%;
+}
+#yuh3{
+  align-items: center;
+  padding-left: 200px;
+}
+#yuh{
+  padding-left: -90px;
+  padding-top: 50px;
+}
+#yuh2{
+  padding-left: 200px;
+}
+button:hover{
+  background-color: #815280;
+}
+button:focus{
+  outline: none;
+  background-color: #7227b9;
+}
+#yuhs {
+  width: 96%;
+}
+#yes{
+  width: 130px;
+  position:inherit;
+  padding-left: 10px;
+}
+  
+ *{  
+      padding: 0;  
+      margin: 0;  
+      box-sizing: border-box;  
+      font-family: 'Spartan', sans-serif;  
+      color: hsl(221, 14%, 31%);  
+      font-weight: 700;  
+ }  
+ :root{  
+      --mainbgcolor: hsl(278, 44%, 37%);  
+      --mainbg1color: hsl(0, 0%, 90%);  
+      --mainbg2color: hsl(268, 75%, 9%);  
+      --twotkbg: hsl(0, 5%, 81%);  
+      --tbgkbgsbg: hsl(268, 28%, 67%);  
+ }  
+ body{  
+     padding-left: 0px;
+      width: 100%;  
+      max-width: 1440px;  
+      background-color: var(--mainbgcolor);  
+      height: 100vh;  
+      display: flex;  
+      justify-content: center;  
+      align-items: center;  
+      flex-direction: column;  
+ }  
+ body.active1{  
+      background-color: var(--mainbg1color);  
+ }  
+ body.active1 .btn{  
+      background-color: var(--twotkbg);  
+ }  
+ body.active2{  
+      background-color: var(--mainbg2color);  
+ }  
+ .toggle{  
+      display: flex;  
+      justify-content: space-between;  
+ }  
+ .right{  
+      display: flex;  
+      justify-content: flex-end;  
+ }  
+ .toggle p{  
+      margin: 0 5px;  
+      color: #601a1a;  
+      cursor: pointer;  
+ }  
+ body.active1 .toggle h3{  
+      color: #111;  
+ }  
+ body.active2 .toggle h3{  
+      color: hsl(52, 100%, 62%);  
+ }  
+ h3{  
+      color: #FFF;  
+ }  
+ .control{  
+      display: flex;  
+      justify-content: flex-end;  
+ }  
+ .control .box{  
+      width: 60px;  
+      height: 15px;  
+      background-color: hsl(224, 36%, 15%);  
+      border-radius: 30px;  
+      margin-left: 4px;  
+      position: relative;  
+ }  
+ body.active1 .control .box{  
+      background-color: var(--twotkbg);  
+ }  
+ body.active2 .control #circle{  
+      background-color: hsl(176, 100%, 44%);  
+ }  
+ .control #circle{  
+      width: 15px;  
+      height: 15px;  
+      background-color: hsl(6, 63%, 50%);  
+      position: absolute;  
+      top: 0;  
+      left: 0;  
+      z-index: 1;  
+      border-radius: 30px;  
+ }  
+ body.active1 .control #circle{  
+      background-color: hsl(25, 98%, 40%);  
+ }  
+ .control p{  
+      color: #FFF;  
+      cursor: pointer;  
+      margin-right: 4px;  
+ }  
+ body.active1 .control p{  
+      color: #111;  
+ }  
+ body.active1 .right p{  
+      color: #111;  
+ }  
+ body.active2 .control p{  
+      color: hsl(52, 100%, 62%);  
+ }  
+ body.active2 .right p{  
+      color: hsl(52, 100%, 62%);  
+ }  
+ .screen{  
+      width: 450px;  
+ }  
+ #screen{  
+      width: 180%;  
+      height: 100px;  
+      margin: 10px 0;  
+      text-align: right;  
+      font-size: 32px;  
+      background-color: hsl(224, 36%, 15%);  
+      color: #FFF;  
+      border: 0;  
+      outline: none;  
+      border-radius: 7px;  
+ }  
+ body.active1 #screen{  
+      background-color: hsl(0, 0%, 93%);  
+      color: #111;  
+ }  
+ body.active2 #screen{  
+      background-color: var(--tbgkbgsbg);  
+      color: hsl(52, 100%, 62%);  
+ }  
+ button{  
+      width: 90px;  
+   padding: 15px;  
+   outline: none;  
+   cursor: pointer;  
+   border: 0;  
+   border-radius: 5px;  
+   box-shadow: 0px 3px 0px 0px hsl(28, 16%, 65%);  
+   margin: 10px 10px;  
+   font-size: 32px;  
+   color: black;  
+ }  
+ body.active1 button{  
+      box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);  
+ }  
+ body.active2 button{  
+      box-shadow: 0px 3px 0px 0px hsl(268, 47%, 21%);  
+      background-color: hsl(290, 70%, 36%);  
+      color: hsl(52, 100%, 62%);  
+ }  
+ .btn{  
+      display: flex;  
+      width: 450px;  
+      flex-flow: wrap;  
+      background-color: hsl(224, 36%, 15%);  
+      padding: 10px 5px;  
+      margin: 8px 0;  
+      border-radius: 7px;  
+ }  
+ body.active2 .btn{  
+      background-color: var(--tbgkbgsbg);  
+ }  
+ .reset,.del{  
+      box-shadow: 0px 3px 0px 0px hsl(224, 28%, 35%);  
+      background-color: hsl(225, 21%, 49%);  
+      color: #FFF;  
+      font-size: 16px;  
+ }  
+ body.active1 .reset, body.active1 .del{  
+      box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);  
+      background-color: hsl(185, 42%, 37%);  
+ }  
+ body.active2 .reset, body.active2 .del{  
+      box-shadow: 0px 3px 0px 0px hsl(290, 70%, 36%);  
+      background-color: hsl(268, 47%, 21%);  
+      color: #fff;  
+ }  
+ .reset,.equal{  
+      width: 200px;  
+      color: #FFF;  
+      font-size: 16px;  
+ }  
+ .equal{  
+      box-shadow: 0px 3px 0px 0px hsl(6, 70%, 34%);  
+      background-color: hsl(6, 63%, 50%);  
+ }  
+ body.active1 .equal{  
+      box-shadow: 0px 3px 0px 0px hsl(25, 99%, 27%);  
+      background-color: hsl(25, 98%, 40%);  
+ }  
+ body.active2 .equal{  
+      box-shadow: 0px 3px 0px 0px hsl(177, 92%, 70%);  
+      background-color: hsl(176, 100%, 44%);  
+      color: #fff;  
+ }  
